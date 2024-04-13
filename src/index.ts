@@ -21,7 +21,7 @@ app.get("/test", async (req: Request, res: Response) => {
   res.json({ message: "Hello!" });
 });
 
-app.get("health", async (req: Request, res: Response) => {
+app.get("/health", async (req: Request, res: Response) => {
   res.send({ message: "health OK!" });
 });
 
